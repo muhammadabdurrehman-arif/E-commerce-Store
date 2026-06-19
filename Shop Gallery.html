@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Shop Gallery</title>
+   <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Default text color */
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for the section */
+}
+
+.gallery h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333; /* Consistent heading color */
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 0 10px;
+    color: #333; /* Consistent product name color */
+}
+
+.product-card .price {
+    font-size: 16px;
+    color: #ff6347; /* Theme color for price */
+    margin-bottom: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .product-card h3 {
+        font-size: 16px;
+    }
+
+    .product-card .price {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery h2 {
+        font-size: 28px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .product-card h3 {
+        font-size: 14px;
+    }
+
+    .product-card .price {
+        font-size: 12px;
+    }
+}
+   </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+</head>
+<body>
+    <section class="gallery">
+        <h2>Our Products</h2>
+        <div class="gallery-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="images/p1.jpeg" alt="Product 1">
+                <h3>T-Shirt Women</h3>
+                <p class="price">$49.99</p>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="images/p4.jpg" alt="Product 2">
+                <h3>Rings</h3>
+                <p class="price">$59.99</p>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="images/p2.jpeg" alt="Product 3">
+                <h3>Watch</h3>
+                <p class="price">$39.99</p>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="images/p3.jpg" alt="Product 4">
+                <h3>Black-Coat</h3>
+                <p class="price">$69.99</p>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="images/p5.jpg" alt="Product 5">
+                <h3>Shoes</h3>
+                <p class="price">$29.99</p>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="images/p6.jpg" alt="Product 6">
+                <h3>Tablet</h3>
+                <p class="price">$79.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/p7.jfif" alt="Product 6">
+                <h3>Ties </h3>
+                <p class="price">$40.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/p8.jpg" alt="Product 6">
+                <h3>Bridal Makeup</h3>
+                <p class="price">$1,000</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

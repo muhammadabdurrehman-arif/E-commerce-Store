@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+   <style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Default text color */
+}
+
+/* Contact Us Section */
+.contact-us {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for the section */
+}
+
+.contact-us h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333; /* Consistent heading color */
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form, .contact-info {
+    flex: 1 1 45%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3, .contact-info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333; /* Consistent heading color */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #ff6347; /* Theme color for button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #e5533d; /* Darker shade for hover */
+    transform: translateY(-2px);
+}
+
+.contact-info ul {
+    list-style-type: none;
+}
+
+.contact-info ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.contact-info ul li i {
+    font-size: 20px;
+    color: #ff6347; /* Theme color for icons */
+    margin-right: 10px;
+}
+
+.map-placeholder {
+    margin-top: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-form, .contact-info {
+        flex: 1 1 100%;
+    }
+
+    .contact-form h3, .contact-info h3 {
+        font-size: 22px;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 12px;
+    }
+
+    .submit-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .contact-info ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-us h2 {
+        font-size: 28px;
+    }
+
+    .contact-form h3, .contact-info h3 {
+        font-size: 20px;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 10px;
+    }
+
+    .submit-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .contact-info ul li {
+        font-size: 12px;
+    }
+}
+   </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+</head>
+<body>
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Get in Touch</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3>Our Contact Information</h3>
+                <ul>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Main Street, City, Country</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <p>+92316646083</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <p>abdurrehman3054@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Map Placeholder -->
+        <div class="map-placeholder">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093747!2d144.95373531531664!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d6a32d3a1e8!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1633023222534!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+            </iframe>
+        </div>
+    </section>
+</body>
+</html>
